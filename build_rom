@@ -31,4 +31,4 @@ send_file() {
 }
 
 # First builds for testing and to capture ccache
-timeout -k 10 90m mka derp -j$(nproc --all)
+timeout -k 10 90m mka derp -j8
