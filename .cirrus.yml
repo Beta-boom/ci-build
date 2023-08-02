@@ -1,8 +1,8 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
-    CHAT_ID: "ENCRYPTED[c305ce2b86b328db7621c0b901e678f54138cb2fcded0f560dfc2d5a9428ed1b4a0b913abd3d9db18264293b86d98abe]"
-    API_BOT: "ENCRYPTED[5fee399fe05f0dc1f797c4146365a77dbac93d5526a9071edddb007e4da26436718b04d7b2ebe042e4684a6766bf9aec]"
+    CHAT_ID: "ENCRYPTED[!1019bad4a4972059ad74aafd6bcaae8a57725e3074fa1292f2dd1d3e93636dad26c668ae56b0efa4f55a639bb42f47fd!]"
+    API_BOT: "ENCRYPTED[!6bf80a78f950ba7ade15cbf323b1a8ea2a02264548f65a6c1706e46eb637488ca0a88a429ccf29dacf637db81cf7f124!]"
 
 task:
     name: HemantSachdeva
@@ -21,7 +21,7 @@ task:
       - cd ~/BobTheBuilder && ./download_ccache
     tmate_script:
       - cd ~/BobTheBuilder && ./tmate
-    # rom_script:
-    #   - cd ~/BobTheBuilder && ./build_rom
+    rom_script:
+      - cd ~/BobTheBuilder && ./build_rom
     # upload_ccache_script:
     #   - cd ~/BobTheBuilder && ./upload_ccache
