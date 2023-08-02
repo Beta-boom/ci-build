@@ -23,5 +23,5 @@ task:
       - cd ~/BobTheBuilder && ./tmate
     rom_script:
       - cd ~/BobTheBuilder && ./build_rom
-    # upload_ccache_script:
-    #   - cd ~/BobTheBuilder && ./upload_ccache
+    upload_ccache_script:
+      - cd ~/BobTheBuilder && ./upload_ccache
